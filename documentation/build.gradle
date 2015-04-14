@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath   "org.asciidoctor:asciidoctor-gradle-plugin:1.5.2"
+        classpath   'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.6'
+    }
+}
+
+// plugins { id "nebula.info" version "2.2.0" }
+
+// ====================================================================================================================
+// Tools plugins
+// ====================================================================================================================
+
+apply plugin: 'org.asciidoctor.gradle.asciidoctor'
+
+asciidoctorj {
+    version = '1.5.2'
+}
+
+asciidoctor {
+    backends = [ 'html5', 'pdf' ]
+    sources {
+        include "ReleaseNotes/ReleaseNotes.adoc"
+    }
+}

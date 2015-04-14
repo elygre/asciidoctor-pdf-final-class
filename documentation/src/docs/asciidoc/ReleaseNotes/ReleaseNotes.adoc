@@ -1,0 +1,8 @@
+﻿= iKnowBase Release Notes
+:description: Release Notes for iKnowBase {revnumber}
+:toc: left
+:numbered:
+
+== Introduction
+
+This document contains release notes for iKnowBase software.
