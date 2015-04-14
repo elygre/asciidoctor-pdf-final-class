@@ -34,3 +34,5 @@ plugin.
     > Cannot inherit from final class
 
     BUILD FAILED
+
+(Of course, you can also verify the problem by building only from the root directory, and commenting out the nebula-info plugin).
