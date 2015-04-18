@@ -3,6 +3,8 @@
 This repo shows how to provoke a "Cannot inherit from final class"-error when using asciidoctor-pdf in a gradle 
 subproject where the nebula-info plugin is loaded.
 
+NOTE: There is a workaround for this particular problem, as discussed in http://discuss.gradle.org/t/dealing-with-plugin-classpath-conflicts/9162. The underlying problem, that different plugins share the same classloader may be resolved in a future gradle version, but for now, there is a solution to this particular problem.
+
 First, verify that asciidoctor-pdf works by itself, as a standalone project. From the documentation subdirectory,
 run "gradle -u clean asciidoctor". The "-u" option makes gradle consider this project as a standalone project,
 ignoring the parent project. This should work.
